@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ND Nexu Digital | Portal de Casinos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome para el ícono de WhatsApp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a; /* Fondo ultra oscuro */
+            color: #ffffff;
+        }
+        .title-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .gold-gradient-bg {
+            background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+        }
+        
+        /* Efecto de brillo al pasar el mouse por los botones */
+        .link-btn {
+            transition: all 0.3s ease;
+        }
+        .link-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(191, 149, 63, 0.4);
+        }
+        
+        /* Botón flotante de WhatsApp */
+        .float-ws {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s;
+        }
+        .float-ws:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center py-12 px-4 sm:px-6 relative overflow-x-hidden">
+
+    <!-- Efectos de luz en el fondo -->
+    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-yellow-600/10 rounded-full blur-[120px] pointer-events-none -z-10"></div>
+
+    <main class="w-full max-w-md mx-auto flex flex-col items-center z-10">
+        
+        <!-- Logo / Pica -->
+        <div class="mb-4">
+            <svg viewBox="0 0 24 24" fill="url(#gold-gradient)" class="w-24 h-24 drop-shadow-[0_0_15px_rgba(191,149,63,0.5)]">
+                <defs>
+                    <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#bf953f" />
+                        <stop offset="25%" stop-color="#fcf6ba" />
+                        <stop offset="50%" stop-color="#b38728" />
+                        <stop offset="75%" stop-color="#fbf5b7" />
+                        <stop offset="100%" stop-color="#aa771c" />
+                    </linearGradient>
+                </defs>
+                <path d="M12 2.5C12 2.5 4 10 4 15C4 17.5 6 19.5 8.5 19.5C10.5 19.5 11.5 18 12 17C12.5 18 13.5 19.5 15.5 19.5C18 19.5 20 17.5 20 15C20 10 12 2.5 12 2.5ZM10 22L14 22L13 18.5L11 18.5L10 22Z" />
+            </svg>
+        </div>
+
+        <!-- Títulos -->
+        <h1 class="text-3xl md:text-4xl font-bold mb-1 tracking-wider title-font gold-gradient-text text-center italic">
+            ND Nexu Digital
+        </h1>
+        <h2 class="text-sm md:text-base text-gray-400 mb-8 uppercase tracking-widest text-center">
+            Portal De Casinos
+        </h2>
+
+        <!-- Contenedor de Enlaces -->
+        <div class="w-full space-y-4">
+            
+            <a href="https://jugamos1.lat" target="_blank" rel="noopener noreferrer" class="link-btn flex items-center justify-center w-full py-4 px-6 bg-zinc-900 border border-yellow-600/30 rounded-xl text-yellow-500 font-semibold text-lg hover:bg-zinc-800 hover:border-yellow-500">
+                1. Jugamos
+            </a>
+            
+            <a href="https://ganamosbet.plus" target="_blank" rel="noopener noreferrer" class="link-btn flex items-center justify-center w-full py-4 px-6 bg-zinc-900 border border-yellow-600/30 rounded-xl text-yellow-500 font-semibold text-lg hover:bg-zinc-800 hover:border-yellow-500">
+                2. Ganamos+
+            </a>
+
+            <a href="https://casinozeus1.plus" target="_blank" rel="noopener noreferrer" class="link-btn flex items-center justify-center w-full py-4 px-6 bg-zinc-900 border border-yellow-600/30 rounded-xl text-yellow-500 font-semibold text-lg hover:bg-zinc-800 hover:border-yellow-500">
+                3. Casino Zeus
+            </a>
+
+            <a href="https://bet30e.lat" target="_blank" rel="noopener noreferrer" class="link-btn flex items-center justify-center w-full py-4 px-6 bg-zinc-900 border border-yellow-600/30 rounded-xl text-yellow-500 font-semibold text-lg hover:bg-zinc-800 hover:border-yellow-500">
+                4. Bet30
+            </a>
+
+            <a href="https://ganaencasabet.lat" target="_blank" rel="noopener noreferrer" class="link-btn flex items-center justify-center w-full py-4 px-6 bg-zinc-900 border border-yellow-600/30 rounded-xl text-yellow-500 font-semibold text-lg hover:bg-zinc-800 hover:border-yellow-500">
+                5. Gana en Casa
+            </a>
+
+            <a href="https://celuapuestas1.lat" target="_blank" rel="noopener noreferrer" class="link-btn flex items-center justify-center w-full py-4 px-6 bg-zinc-900 border border-yellow-600/30 rounded-xl text-yellow-500 font-semibold text-lg hover:bg-zinc-800 hover:border-yellow-500">
+                6. Celu Apuestas
+            </a>
+
+            <a href="https://casinozeta1.lat" target="_blank" rel="noopener noreferrer" class="link-btn flex items-center justify-center w-full py-4 px-6 bg-zinc-900 border border-yellow-600/30 rounded-xl text-yellow-500 font-semibold text-lg hover:bg-zinc-800 hover:border-yellow-500">
+                7. Casino Zeta
+            </a>
+
+            <a href="https://oropuro.bet" target="_blank" rel="noopener noreferrer" class="link-btn flex items-center justify-center w-full py-4 px-6 bg-zinc-900 border border-yellow-600/30 rounded-xl text-yellow-500 font-semibold text-lg hover:bg-zinc-800 hover:border-yellow-500">
+                8. OroPuro
+            </a>
+
+            <a href="https://fortubet.cc" target="_blank" rel="noopener noreferrer" class="link-btn flex items-center justify-center w-full py-4 px-6 bg-zinc-900 border border-yellow-600/30 rounded-xl text-yellow-500 font-semibold text-lg hover:bg-zinc-800 hover:border-yellow-500">
+                9. FortuBet
+            </a>
+
+            <a href="https://granposeidon.plus" target="_blank" rel="noopener noreferrer" class="link-btn flex items-center justify-center w-full py-4 px-6 bg-zinc-900 border border-yellow-600/30 rounded-xl text-yellow-500 font-semibold text-lg hover:bg-zinc-800 hover:border-yellow-500">
+                10. Gran Poseidon
+            </a>
+
+            <a href="https://konabet.plus" target="_blank" rel="noopener noreferrer" class="link-btn flex items-center justify-center w-full py-4 px-6 bg-zinc-900 border border-yellow-600/30 rounded-xl text-yellow-500 font-semibold text-lg hover:bg-zinc-800 hover:border-yellow-500">
+                11. KonaBet
+            </a>
+
+            <a href="https://camelbet.icu" target="_blank" rel="noopener noreferrer" class="link-btn flex items-center justify-center w-full py-4 px-6 bg-zinc-900 border border-yellow-600/30 rounded-xl text-yellow-500 font-semibold text-lg hover:bg-zinc-800 hover:border-yellow-500">
+                12. CamelBet
+            </a>
+
+            <a href="https://megafaraon.plus" target="_blank" rel="noopener noreferrer" class="link-btn flex items-center justify-center w-full py-4 px-6 bg-zinc-900 border border-yellow-600/30 rounded-xl text-yellow-500 font-semibold text-lg hover:bg-zinc-800 hover:border-yellow-500">
+                13. Mega Faraon
+            </a>
+
+            <a href="https://rhinoplay.xyz" target="_blank" rel="noopener noreferrer" class="link-btn flex items-center justify-center w-full py-4 px-6 bg-zinc-900 border border-yellow-600/30 rounded-xl text-yellow-500 font-semibold text-lg hover:bg-zinc-800 hover:border-yellow-500">
+                14. RhinoPlay
+            </a>
+
+        </div>
+
+        <!-- Footer de despedida -->
+        <div class="mt-12 text-center pb-8">
+            <p class="text-xl font-medium title-font text-white italic">
+                ¡Buena Suerte En tu Juego! <span class="not-italic">🍀</span>
+            </p>
+            <p class="mt-4 text-xs text-gray-500 font-bold tracking-widest">ND</p>
+        </div>
+        
+    </main>
+
+    <!-- Botón Flotante WhatsApp sin mensaje predeterminado -->
+    <a href="https://api.whatsapp.com/send?phone=5491160394150" class="float-ws" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
